@@ -20,7 +20,7 @@
         <service android:name=".MyService"/>
         <service android:name=".JobScheduler.MyJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"/>
-
+[
         <service
             android:exported="false"
             android:name=".FireBaseJobDispatcher.MyJobDispatcherService">
@@ -28,6 +28,7 @@
                 <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
             </intent-filter>
         </service>
+        <receiver android:name=".AlarmManagerDemo.TimeChangeReceiver"/>
     </application>
 
 </manifest>
